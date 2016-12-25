@@ -42,6 +42,7 @@ selectWindow("Projection");
 rename("Projection2");
 run("Rotate 90 Degrees Left");
 run("Rotate 90 Degrees Left");
+
 selectWindow("workingcopyA-2");
 close();
 
