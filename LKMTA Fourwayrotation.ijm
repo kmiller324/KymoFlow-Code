@@ -5,7 +5,7 @@ run("Duplicate...", "title=workingcopyA-1");
 run("Duplicate...", "title=workingcopyA-2");
 run("Duplicate...", "title=workingcopyA-3");
 
-// select the first copy and process it with a novel implimentation of Lucas Kanade Motion tracking alogrithm. 
+// select the first copy and process it with a novel implementation of Lucas Kanade Motion tracking algorithm.
 // This returns an output kymograph called Projection0.
 selectWindow("workingcopyA");
 runMacro("LKMTA core.ijm");
@@ -16,7 +16,7 @@ close();
 
 // select the second copy, rotate it by 90 degrees and process it.
 // This returns an output kymograph called Projection1.
-// Unrotate it and take the negative reciprocal to get it back in propoer units of pixels/frame. 
+// Unrotate it and take the negative reciprocal to get it back in proper units of pixels/frame.
 
 selectWindow("workingcopyA-1");
 run("Rotate 90 Degrees Right");
@@ -31,8 +31,7 @@ close();
 
 // select the third copy, rotate it by 180 degrees and process it.
 // This returns an output kymograph called Projection2.
-// Unrotate it to get it back in propoer units of pixels/frame. 
-// ??? -1 
+// Unrotate it to get it back in proper units of pixels/frame.
 
 selectWindow("workingcopyA-2");
 run("Rotate 90 Degrees Right");
@@ -48,7 +47,7 @@ close();
 
 // select the forth copy, rotate it by 270 degrees and process it.
 // This returns an output kymograph called Projection3.
-// Unrotate it and take the negative reciprocal to get it back in propoer units of pixels/frame. 
+// Unrotate it and take the negative reciprocal to get it back in proper units of pixels/frame.
 
 selectWindow("workingcopyA-3");
 run("Rotate 90 Degrees Left");
@@ -72,7 +71,7 @@ selectWindow("Projection");
 rename("p0p1p2p3 AVE");
 
 
-// Find the standard deviation over the average of the pixel intensities to indentify pixels where the estimates diverge.
+// Find the standard deviation over the average of the pixel intensities to identify pixels where the estimates diverge.
 selectWindow("po-p1-p2-p3");
 run("Z Project StDev Ignore NaNs");
 rename("p0p1p2p3 STDEV");

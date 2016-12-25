@@ -4,7 +4,7 @@
 // Because we draw the lines by hand in the kymograph, when objects move more rapidly their intensity does not decrease.
 // As a result, the intensity constraint in the optical flow equations is violated.
 // To correct for this, we reduce each object in each frame of the movie into a single point and then later we blur it.
-// To do this, we will find the center of mass for the object at each time point by first blurring and then indentifying the pixel intensity maxima.
+// To do this, we will find the center of mass for the object at each time point by first blurring and then identifying the pixel intensity maxima.
 
 
 

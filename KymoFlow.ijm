@@ -1,4 +1,4 @@
-// This is the starting point for the KymoFlow code. It takes a kymograph and makes two copies. 
+// This is the starting point for the KymoFlow code. It takes a kymograph and makes two copies.
 // One copy is rotated by 45 degrees and the other is not, they are both processed, averaged together, 
 // outliers are removed, the maximum pixel intensity value is set to zero and the output lines are stretched by a factor of 6.
 //
@@ -61,7 +61,7 @@ bounds = "x-range=" + leftcrop + "," + rightcrop + " y-range="+ topcrop + "," + 
 run("TransformJ Crop", bounds);
 
 
-// change the values of the local pixel velocites by 45 degrees.
+// change the values of the local pixel velocities by 45 degrees.
 //run("TransformJ Crop", "x-range=150,449 y-range=150,449");
 selectWindow("kymoflowmap");
 selectWindow("kymoflowmap rotated cropped");
