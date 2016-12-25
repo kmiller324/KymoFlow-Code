@@ -278,10 +278,10 @@ imageCalculator("Divide create 32-bit stack", "Det 1 IyItIxIy - IxItIy2","Det A 
 selectWindow("Result of Det 1 IyItIxIy - IxItIy2");
 rename("Vx");
 
-// could delete as Vy is not used.
-imageCalculator("Divide create 32-bit stack", "Det 2 IxItIxIy - Ix2IyIt","Det A Ix2Iy2 - IxIyIxIy");
-selectWindow("Result of Det 2 IxItIxIy - Ix2IyIt");
-rename("Vy");
+// deleted as Vy is not used.
+//imageCalculator("Divide create 32-bit stack", "Det 2 IxItIxIy - Ix2IyIt","Det A Ix2Iy2 - IxIyIxIy");
+//selectWindow("Result of Det 2 IxItIxIy - Ix2IyIt");
+//rename("Vy");
 
 // Unneeded windows are closed to save memory. 
 selectWindow("Ix2 + Iy2");

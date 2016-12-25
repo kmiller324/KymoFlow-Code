@@ -58,8 +58,9 @@ runMacro("LKMTA_movie_processing.ijm");
 selectWindow("Vx");
 rename("Vx1");
 
-selectWindow("Vy");
-rename("Vy1");
+// Vy is not used
+//selectWindow("Vy");
+//rename("Vy1");
 
 
 // A problem with the LKMTA is that it does not accurately measure the velocity of objects that move rapidly. 
@@ -94,8 +95,9 @@ runMacro("LKMTA_movie_processing.ijm");
 selectWindow("Vx");
 rename("Vx2");
 
-selectWindow("Vy");
-rename("Vy2");
+// Vy is not used
+//selectWindow("Vy");
+//rename("Vy2");
 
 // We take the rotated velocity flow map, convert it to a kymograph stack and unrotate it geometrically and mathematically.
 selectWindow("Vx2");
@@ -140,10 +142,13 @@ selectWindow("Vx1");
 close();
 selectWindow("Vx2");
 close();
-selectWindow("Vy1");
-close();
-selectWindow("Vy2");
-close();
+
+// Vy is not used
+//selectWindow("Vy1");
+//close();
+//selectWindow("Vy2");
+//close();
+
 selectWindow("Concatenated Stacks");
 close();
 selectWindow("Projection");
